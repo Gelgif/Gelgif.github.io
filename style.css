@@ -1,0 +1,68 @@
+.html {
+    background-color: #3d3d3d;
+}
+
+.bodyDiv {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.headerDiv {
+    position: relative;
+    height: 10%;
+    width: 100%;
+}
+
+.centerDiv {
+    position: relative;
+    height: 75%;
+    width: 100%;
+}
+
+.bottomDiv {
+    position: relative;
+    height: 5%;
+    width: 100%;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.left {
+    left: 0;
+    background-color: #111;
+}
+
+.right {
+    right: 0;
+    background-color: rgb(32, 8, 8);
+}
+
+#Title {
+    display: flex;
+    justify-content: center;
+    color: green;
+}
+
+#SomeButton {
+    color: black;
+    background-color: blueviolet;
+}
+
+#Text {
+    display: flex;
+    color: red;
+    justify-content: left;
+}
+
+#bottomH4 {
+    display: flex;
+    color: blue;
+    justify-content: right;
+}
