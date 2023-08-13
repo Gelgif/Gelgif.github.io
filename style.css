@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(transparent 0%, transparent 10%, black 20%, black 40%, transparent 50%, transparent 60%, black 70%, black 100%),
+    background: linear-gradient(transparent 0%, transparent 10%, black 20%, black 40%, black 40%, black 60%, black 70%, black 100%),
     url(logos/background_red_lines.svg);
     background-attachment: local, fixed;
     background-size: cover;
@@ -21,4 +21,10 @@ body {
     max-width: 100vw;
     display: block;
     margin: 0 auto;
+}
+
+.text {
+    color: white;
+    margin-left: 10%;
+    font-size: 200%;
 }
