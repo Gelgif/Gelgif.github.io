@@ -1,0 +1,46 @@
+:root {
+    --white: #FFFFFF;
+    --darkred: #D3342C;
+}
+
+footer {
+    background-color: var(--darkred);
+    padding-top: 0.02vh;
+    padding-bottom: 0.02vh;
+}
+
+.footer-address {
+    text-align: center;
+    color: var(--white);
+}
+
+.logos {
+    text-align: center;
+    fill: var(--white);
+}
+
+.left-footer, .center-footer, .right-footer {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 2vw;
+}
+
+.left-footer {
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    width: 20vw;
+}
+
+.center-footer {
+    width: 50vw;
+}
+
+.footer-logo {
+    width: 2vw;
+    height: 2vw;
+}
+
+.footer-logo-link {
+    text-decoration: none;
+}
