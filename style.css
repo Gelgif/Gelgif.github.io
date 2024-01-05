@@ -72,3 +72,45 @@ body {
 .empty-space {
     height: 20%; /* Adjust the height of the space */
 }
+
+.calander-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 4vh 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px; /* Adjust gap between items */
+    max-width: 60%;
+}
+
+.calander-item {
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    overflow: hidden;
+    padding-top: 100%; /* Ensure square shape */
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    top: 0.8vw;
+    right: 0.8vw;
+    font-weight: bold;
+    font-size: 1vw
+}
+
+.event {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    font-size: 1.5vw; /* Adjust font size as needed */
+    padding-right: 5cqh;
+}
+
+.days-name {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8vw; /* Adjust font size as needed */
+}
