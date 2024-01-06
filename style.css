@@ -73,21 +73,57 @@ body {
     height: 20%; /* Adjust the height of the space */
 }
 
-.calander-container {
+.calender-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 4vh 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 7vh 4vh 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1px; /* Adjust gap between items */
     max-width: 60%;
 }
 
-.calander-item {
+.calender-merged-row {
+    position: relative;
+    grid-column: 2 / span 5; /* Span across all 5 columns */
+    background-color: rgb(243, 60, 60); /* Background color for the merged row */
+    border: 1px solid black; /* Border for the merged row */
+    overflow: hidden;
+}
+
+.calender-button-container {
+    position: relative;
+    background-color: rgb(243, 60, 60); /* Background color for the merged row */
+    border: 1px solid black; /* Border for the merged row */
+    overflow: hidden;
+}
+
+.calender-button {
+    background-color: rgb(243, 60, 60); /* Background color for the merged row */
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calender-button:hover {
+    background-color: rgb(254, 104, 104); /* Color change on hover */
+}
+
+.calender-item {
     position: relative;
     background-color: white;
     border: 1px solid black;
     overflow: hidden;
     padding-top: 100%; /* Ensure square shape */
-    position: relative;
+}
+
+.month {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw; /* Adjust font size as needed */
 }
 
 .date {
@@ -105,6 +141,18 @@ body {
     transform: translate(0%, -50%);
     font-size: 1.5vw; /* Adjust font size as needed */
     padding-right: 5cqh;
+}
+
+.event-with-link {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    font-size: 1.5vw; /* Adjust font size as needed */
+    padding-right: 5cqh;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer
 }
 
 .days-name {
