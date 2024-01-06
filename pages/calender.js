@@ -35,7 +35,7 @@ function loadCalenderGrid()
 
 function writeMonthName()
 {
-    document.getElementById("monthLabel").innerHTML = monthName[currentMonth];
+    document.getElementById("monthLabel").innerHTML = monthName[currentMonth] + " " + currentYear;
 }
 
 function writeDaysOfWeek()
