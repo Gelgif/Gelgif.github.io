@@ -1,9 +1,9 @@
-var className = "footer-component"
+var footerClassName = "footer-component"
 
 class Footer extends HTMLElement {
     constructor() {
       super();
-      this.className = className
+      this.className = footerClassName
     }
 
     connectedCallback() {
@@ -12,9 +12,9 @@ class Footer extends HTMLElement {
       xhr.onreadystatechange= function() {
           if (this.readyState!==4) return;
           if (this.status!==200) return;
-          document.getElementsByClassName(className)[0].innerHTML = this.responseText;
+          document.getElementsByClassName(footerClassName)[0].innerHTML = this.responseText;
       };
       xhr.send();
     }
   }
-  customElements.define(className, Footer);
+  customElements.define(footerClassName, Footer);

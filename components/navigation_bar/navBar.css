@@ -1,3 +1,9 @@
+:root {
+    --white: #FFFFFF;
+    --darkred: #D3342C;
+    --darkerred: #a8302a;
+}
+
 nav{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,12 +11,12 @@ nav{
 
 .topnav{
     overflow: hidden;
-    background-color: #D3342C;
+    background-color: var(--darkred);
 }
 
 .topnav a{
     float: right;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
     padding: 26px 14px;
     text-decoration: none;
@@ -18,5 +24,5 @@ nav{
 }
 
 .topnav a:hover{
-    background-color: #a8302a;
+    background-color: var(--darkerred);
 }
