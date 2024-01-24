@@ -20,6 +20,7 @@ body {
 .title {
     color: white;
     font-size: 250%;
+    font-family: 'Roboto', sans-serif;;
     font-weight: bold;
     margin-left: 10%; /* Aligns the title to the left */
 }
@@ -67,6 +68,8 @@ body {
     color: white;
     font-size: 150%;
     margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 .empty-space {
