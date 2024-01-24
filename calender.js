@@ -1,14 +1,44 @@
 const events = [
     {
+        date: new Date(2024, 1, 2),
+        description: "Pré-Festival",
+        link: null
+    },
+    {
+        date: new Date(2024, 1, 1),
+        description: "Pré-Festival",
+        link: null
+    },
+    {
+        date: new Date(2024, 0, 31),
+        description: "Pré-Festival",
+        link: null
+    },
+    {
+        date: new Date(2024, 0, 30),
+        description: "Pré-Festival",
+        link: null
+    },
+    {
+        date: new Date(2024, 0, 29),
+        description: "Pré-Festival",
+        link: null
+    },
+    {
+        date: new Date(2024, 0, 28),
+        description: "Volley-ball du RÉGIÉ",
+        link: null
+    },
+    {
+        date: new Date(2024, 0, 17),
+        description: "Mercredi Wings et Karaoké",
+        link: 'https://fb.me/e/7TjwFQaMd'
+    },
+    {
         date: new Date(2024, 0, 15),
         description: "Début session d'hiver",
         link: null
     },
-    {
-        date: new Date(2024, 0, 11),
-        description: "Dévire Atlantide",
-        link: "https://fb.me/e/1CwBlNSME"
-    }, 
     {
         date: new Date(2023, 11, 20),
         description: "Fin session d'automne",

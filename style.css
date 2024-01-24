@@ -82,6 +82,10 @@ body {
     grid-template-rows: 7vh 4vh 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1px; /* Adjust gap between items */
     max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 .calender-merged-row {

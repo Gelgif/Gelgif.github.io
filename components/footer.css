@@ -11,6 +11,9 @@ footer {
 
 .footer-address {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 80%;
     color: var(--white);
 }
 
