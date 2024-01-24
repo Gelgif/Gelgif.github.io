@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(transparent 0%, transparent 10%, black 20%, black 40%, transparent 50%, transparent 60%, black 70%, black 100%),
+    background: linear-gradient(transparent 0%, transparent 10%, black 20%, black 40%, black 40%, black 60%, black 70%, black 100%),
     url(logos/background_red_lines.svg);
     background-attachment: local, fixed;
     background-size: cover;
@@ -17,8 +17,155 @@ body {
     margin: 5vw auto 0 auto;
 }
 
-.image {
-    max-width: 100vw;
+.title {
+    color: white;
+    font-size: 250%;
+    font-family: 'Roboto', sans-serif;;
+    font-weight: bold;
+    margin-left: 10%; /* Aligns the title to the left */
+}
+
+.left-right-division {
+    display: flex;
+    margin-left: 10%;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 5%;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.image-container-right-or-left-section {
+    max-width: 100%; /* Adjust as needed */
+    max-height: 100%; /* Adjust as needed */
+}
+
+.image-container-whole-page {
+    max-width: 40%; /* Adjust as needed */
+    max-height: 40%; /* Adjust as needed */
     display: block;
     margin: 0 auto;
+}
+
+.image {
+    width: 100%; /* Image width fills its container */
+    height: 100%; /* Image height fills its container */
+    border-radius: 10%;
+}
+
+.text {
+    color: white;
+    font-size: 150%;
+    margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.empty-space {
+    height: 20%; /* Adjust the height of the space */
+}
+
+.calender-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 7vh 4vh 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px; /* Adjust gap between items */
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.calender-merged-row {
+    position: relative;
+    grid-column: 2 / span 5; /* Span across all 5 columns */
+    background-color: rgb(243, 60, 60); /* Background color for the merged row */
+    border: 1px solid black; /* Border for the merged row */
+    overflow: hidden;
+}
+
+.calender-button-container {
+    position: relative;
+    background-color: rgb(243, 60, 60); /* Background color for the merged row */
+    border: 1px solid black; /* Border for the merged row */
+    overflow: hidden;
+}
+
+.calender-button {
+    background-color: rgb(243, 60, 60); /* Background color for the merged row */
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calender-button:hover {
+    background-color: rgb(254, 104, 104); /* Color change on hover */
+}
+
+.calender-item {
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    overflow: hidden;
+    padding-top: 100%; /* Ensure square shape */
+}
+
+.month {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw; /* Adjust font size as needed */
+}
+
+.date {
+    position: absolute;
+    top: 0.8vw;
+    right: 0.8vw;
+    font-weight: bold;
+    font-size: 1vw
+}
+
+.event {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    font-size: 1.5vw; /* Adjust font size as needed */
+    padding-right: 5cqh;
+}
+
+.event-with-link {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    font-size: 1.5vw; /* Adjust font size as needed */
+    padding-right: 5cqh;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.days-name {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8vw; /* Adjust font size as needed */
 }

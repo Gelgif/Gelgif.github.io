@@ -1,0 +1,40 @@
+:root {
+    --white: #FFFFFF;
+    --darkred: #D3342C;
+    --darkerred: #a8302a;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav{
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--darkred);
+}
+
+.topnav a{
+    float: right;
+    color: var(--white);
+}
+
+.right-nav a{
+    display: inline-block;
+    text-align: center;
+    padding: 18px 14px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.right-nav a:hover{
+    background-color: var(--darkerred);
+}
+
+.left-nav p a{
+    float: left;
+    vertical-align: top;
+}

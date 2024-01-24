@@ -4,14 +4,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="components/Footer.js" type="text/javascript" defer></script>
+        <script src="components/navigation_bar/navBar.js" type="text/javascript" defer></script>
         <title>Page Title</title>
     </head>
+    <navbar-component></navbar-component>
     <body>
         <img class="main-logo" src="logos/logo_regie.svg" alt="logo du regie">
-        <img class="image" src="logos/circle_placeholder.svg" alt="circle" >
-        <img class="image" src="logos/circle_placeholder.svg" alt="circle" >
-        <img class="image" src="logos/circle_placeholder.svg" alt="circle" >
-        <img class="image" src="logos/circle_placeholder.svg" alt="circle" >
+        <p class="title"></p>
+
+        <div class="left-right-division">
+            <div class="left-section">
+                <p class="title" style="margin: 0;">QU’EST-CE QUE LE RÉGIÉ?</p>
+                <p class="text"></p>
+                <p class="text" style="margin: 0;">Le RÉGIÉ, ou regroupement des étudiants en Génie Informatique et Électrique, 
+                    est là pour t’accompagner tout au long de ton parcours universitaire.</p>
+                <p class="text"></p>
+                <p class="text" style="margin: 0;">Un problème dans un cours? Le RÉGIÉ est là pour défendre tes intérêts 
+                    académiques et t’encourager lors des semaines chargées d’études</p>
+                <p class="text"></p>
+                <p class="text" style="margin: 0;">Plusieurs activités sportives, sociales et académiques sont aussi organisées 
+                    afin de permettre aux membres de vivre une vie étudiante des plus stimulante. Assure-toi de lire le 
+                    Régisseur et de rejoindre le groupe Facebook pour ne rien manquer des activités à venir.</p>
+                <p class="text"></p>
+                <p class="text" style="margin: 0;">Le RÉGIÉ sera aussi présent pour t’aider dans ton cheminement de carrière 
+                    en t’offrant conférences et soirées réseautages.</p>
+                <p class="text"></p>
+                <p class="text" style="margin: 0;">N’hésites pas à nous contacter pour toute question!</p>
+            </div>
+            <div class="right-section">
+                <div class=".image-container-right-or-left-section">
+                    <img class="image" src="../logos/regie_presentation.png">
+                    <p class="text"></p>
+                    <img class="image" src="../logos/regie_presentation_3.png">
+                </div>
+            </div>
+        </div>
+        <p class="title"></p>
+
+        <p class="title">Calendrier</p>
+        <div class="calender-container" id="calender">
+            <div class="calender-button-container">
+                <button class="calender-button" id="previousMonth">&lt</button>
+            </div>
+            <div class="calender-merged-row">
+                <span class="month" id="monthLabel"></span>
+            </div>
+            <div class="calender-button-container">
+                <button class="calender-button" id="nextMonth">&gt</button>
+            </div>
+        </div>
+        <script src="calender.js"></script>
+        <p class="title"></p>
+
+        <p class="title">Quoi de neuf?</p>
+        <figure data-behold-id="LSmZ5I4TYYzN1U6GtOFM"></figure>
+        <script src="https://w.behold.so/widget.js" type="module"></script>
+        <p class="title"></p>
     </body>
     <footer-component></footer-component>
 </html>
