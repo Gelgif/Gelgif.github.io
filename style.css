@@ -64,6 +64,47 @@ body {
     border-radius: 10%;
 }
 
+.image-wrap {
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.image-description-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10%;
+    background: rgb(243, 60, 60);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: opacity .2s, visibility .2s;
+}
+
+.image-wrap:hover .image-description-layer {
+    visibility: visible;
+    opacity: 0.9;
+}
+
+.image-description {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.image-wrap:hover .image-description {
+    transform: translateY(0);
+}
+
 .text {
     color: white;
     font-size: 150%;
