@@ -85,8 +85,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    line-height: 25px;
-    font-size: large;
+    line-height: 120%;
+    font-size: 1vw;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: opacity .2s, visibility .2s;
 }
